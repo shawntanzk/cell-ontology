@@ -15,7 +15,7 @@ jobs:
       
       - name: Run ROBOT diff
         run: |
-          cd src/ontology && make diff
+          cd src/ontology && make rdiff
           
       - name: comment with diff
         env:

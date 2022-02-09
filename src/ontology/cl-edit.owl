@@ -2617,7 +2617,6 @@ Declaration(Class(obo:CL_4023120))
 Declaration(Class(obo:CL_4023121))
 Declaration(Class(obo:CL_4023122))
 Declaration(Class(obo:CL_4023129))
-Declaration(Class(obo:CL_4023132))
 Declaration(Class(obo:CL_4028001))
 Declaration(Class(obo:CL_4028002))
 Declaration(Class(obo:CL_4028003))
@@ -19780,7 +19779,7 @@ SubClassOf(Annotation(oboInOwl:is_inferred "true") obo:CL_0002518 obo:CL_1000497
 
 # Class: obo:CL_0002519 (interrenal epithelial cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:mh"^^xsd:string) Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:12668625"^^xsd:string) obo:IAO_0000115 obo:CL_0002519 "An interrenal epithelial kidney cell is an epithelial cell found in the anterior kidney of teleosts fish. This cell type is arranged in layers around the posterior cardinal vein and contains many mitochondria with tubulovesicular cristae. Interrenal chromaffin cells are interspersed among the tissue layer created by this cell type."^^xsd:string)
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:mh") Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:12668625"^^xsd:string) obo:IAO_0000115 obo:CL_0002519 "An interrenal epithelial kidney cell is an epithelial cell found in the anterior kidney of teleosts fish. This cell type is arranged in layers around the posterior cardinal vein and contains many mitochondria with tubulovesicular cristae. Interrenal chromaffin cells are interspersed among the tissue layer created by this cell type."^^xsd:string)
 AnnotationAssertion(oboInOwl:created_by obo:CL_0002519 "tmeehan"^^xsd:string)
 AnnotationAssertion(oboInOwl:creation_date obo:CL_0002519 "2011-02-08T11:03:32Z"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0002519 "cell"^^xsd:string)
@@ -22679,7 +22678,7 @@ EquivalentClasses(obo:CL_0009036 ObjectIntersectionOf(obo:CL_0000235 ObjectSomeV
 
 # Class: obo:CL_0009037 (lymph node mantle zone B cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:8011279"^^xsd:string) Annotation(oboInOwl:hasDbXref "http://orcid.org/0000-0003-4183-8865/"^^xsd:string) Annotation(oboInOwl:hasDbXref "https://www.arppress.org/v/vspfiles/assets/images/Chapter1T25LymphNodes.pdf"^^xsd:string) obo:IAO_0000115 obo:CL_0009037 "A B lymphocyte that resides in the mantle zone of the lymph node germinal center. These are generally IgM and IgD positive activated B cells that form a 'corona' around the germinal center and are part of the establishment of a secondary lymphatic follicule.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:8011279"^^xsd:string) Annotation(oboInOwl:hasDbXref "http://orcid.org/0000-0003-4183-8865/") Annotation(oboInOwl:hasDbXref "https://www.arppress.org/v/vspfiles/assets/images/Chapter1T25LymphNodes.pdf"^^xsd:string) obo:IAO_0000115 obo:CL_0009037 "A B lymphocyte that resides in the mantle zone of the lymph node germinal center. These are generally IgM and IgD positive activated B cells that form a 'corona' around the germinal center and are part of the establishment of a secondary lymphatic follicule.")
 AnnotationAssertion(oboInOwl:created_by obo:CL_0009037 <http://orcid.org/0000-0002-2825-0621>)
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:CL_0009037 "mantle zone B cell")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0009037 "mantle zone B cell of lymph node")
@@ -29501,11 +29500,6 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:17565741"^^xsd:string) o
 AnnotationAssertion(rdfs:label obo:CL_4023129 "retinoblast")
 SubClassOf(obo:CL_4023129 obo:CL_0009004)
 SubClassOf(obo:CL_4023129 ObjectSomeValuesFrom(obo:BFO_0000050 obo:UBERON_0000966))
-
-# Class: obo:CL_4023132 (test)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> obo:CL_4023132 <http://orcid.org/0000-0001-7258-9596>)
-AnnotationAssertion(rdfs:label obo:CL_4023132 "test")
 
 # Class: obo:CL_4028001 (pulmonary capillary endothelial cell)
 

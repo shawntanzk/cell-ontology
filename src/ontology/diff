@@ -1,2 +1,0 @@
-#!/bin/sh
-./run.sh robot diff -labels True -left https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl --right cl-edit.owl -format markdown --output diff.md

@@ -8,19 +8,19 @@ jobs:
   ROBOT_Diff:
     runs-on: ubuntu-latest
     container: obolibrary/odkfull:v1.2.26
-    env:
-      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       
     steps:
       
       - uses: actions/checkout@v2
       
       - name: Run ROBOT diff
-        run: 
-          cd src/ontology &&
+        run: |
+          cd src/ontology && make diff
           docker run robot diff -labels True -left https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl --right cl-edit.owl -format markdown --output diff.md
                 
       - name: comment with diff
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         uses: NejcZdovc/comment-pr@v1.1.1
         with:
           file: "src/ontology/diff.md"

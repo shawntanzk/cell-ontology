@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Run ROBOT diff
-        run: |
+        run: 
           cd src/ontology &&
           docker run robot diff -labels True -left https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl --right cl-edit.owl -format markdown --output diff.md
                 

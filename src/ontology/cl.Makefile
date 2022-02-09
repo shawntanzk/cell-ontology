@@ -21,7 +21,8 @@
 #	echo "Skipped pr logical" && cp $< $@
 
 .PHONY: diff
-diff: $(ROBOT) diff -labels True -left https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl --right cl-edit.owl -format markdown --output diff.md
+diff: curl https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl -o tmp.owl
+	$(ROBOT) diff -labels True -left tmp.owl --right cl-edit.owl -format markdown --output diff.md
 
 mirror/clo.owl: mirror/clo.trigger
 	echo "WARNING OVERWRITING CLO MIRROR BECAUSE OF EQUIVALENT TERM"

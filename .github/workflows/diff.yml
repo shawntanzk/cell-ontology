@@ -22,5 +22,5 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         uses: NejcZdovc/comment-pr@v1.1.1
         with:
-          file: "src/ontology/diff.md"
+          file: "../../src/ontology/diff.md"
                     

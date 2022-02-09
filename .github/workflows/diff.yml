@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  stale:
+  ROBOT Diff:
     runs-on: ubuntu-latest
     container: obolibrary/odkfull:v1.2.26
     env:
@@ -18,7 +18,7 @@ jobs:
       - name: Run ROBOT diff
         run: |
           cd src/ontology &&
-          ./run.sh robot diff -labels True -left https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl --right cl-edit.owl -format markdown --output diff.md
+          docker run robot diff -labels True -left https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl --right cl-edit.owl -format markdown --output diff.md
                 
       - name: comment with diff
         uses: NejcZdovc/comment-pr@v1.1.1

@@ -13,8 +13,9 @@ jobs:
       
     steps:
       
+      - uses: actions/checkout@v2
+      
       - name: Run ROBOT diff
-        uses: actions/checkout@v2
         run: cd src/ontology &&
                 git show master:./cl-edit.owl>tmp.owl &&
                 sh run.sh robot diff -labels True -left tmp.owl --right cl-edit.owl -format markdown --output diff.md

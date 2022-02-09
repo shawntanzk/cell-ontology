@@ -18,7 +18,7 @@ jobs:
       - name: Run ROBOT diff
         run: |
           cd src/ontology &&
-          docker run robot diff -labels True -left https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl --right cl-edit.owl -format markdown --output diff.md
+          diff
                 
       - name: comment with diff
         uses: NejcZdovc/comment-pr@v1.1.1

@@ -15,9 +15,8 @@ jobs:
       
       - name: Run ROBOT diff
         run: |
-          cd src/ontology && 
-          ./run.sh robot diff -labels True -left https://raw.githubusercontent.com/shawntanzk/cell-ontology/master/src/ontology/cl-edit.owl --right cl-edit.owl -format markdown --output diff.md
-                
+          cd src/ontology && make diff
+          
       - name: comment with diff
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

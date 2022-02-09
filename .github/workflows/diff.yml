@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  ROBOT Diff:
+  ROBOT_Diff:
     runs-on: ubuntu-latest
     container: obolibrary/odkfull:v1.2.26
     env:

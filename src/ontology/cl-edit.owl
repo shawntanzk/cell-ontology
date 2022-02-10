@@ -5980,7 +5980,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0000314 "cell"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:CL_0000314 "milk secreting cell"^^xsd:string)
 SubClassOf(obo:CL_0000314 obo:CL_0000151)
 
-# Class: obo:CL_0000315 (tear secreting cell)
+# Class: obo:CL_0000315 (tears secreting cell)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "MESH:A12.200.882"^^xsd:string) obo:IAO_0000115 obo:CL_0000315 "A cell secreting tears, the fluid secreted by the lacrimal glands. This fluid moistens the conjunctiva and cornea."^^xsd:string)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000315 "tears secreting cell")
@@ -6494,7 +6494,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0000377 "cell"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:CL_0000377 "tracheoblast"^^xsd:string)
 SubClassOf(obo:CL_0000377 obo:CL_0000069)
 
-# Class: obo:CL_0000378 (supporting cell (sensu Nematoda and Protostomia))
+# Class: obo:CL_0000378 (support cell (sensu Nematoda and Protostomia))
 
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000378 "support cell (sensu Nematoda and Protostomia)"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0000378 "cell"^^xsd:string)
@@ -6839,7 +6839,7 @@ SubClassOf(obo:CL_0000423 obo:CL_0000422)
 
 # Class: obo:CL_0000424 (excretory cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135"^^xsd:string) obo:IAO_0000115 obo:CL_0000424 "A cell involved in the elimination of metabolic and foreign toxins, and in maintaining the ionic, acid-base and water balance of biological fluids."^^xsd:string)
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135") obo:IAO_0000115 obo:CL_0000424 "A cell involved in the elimination of metabolic and foreign toxins, and in maintaining the ionic, acid-base and water balance of biological fluids."^^xsd:string)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0000424 "WBbt:0005812"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0000424 "cell"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:CL_0000424 "excretory cell"^^xsd:string)
@@ -7240,7 +7240,7 @@ SubClassOf(obo:CL_0000473 obo:CL_0000003)
 
 # Class: obo:CL_0000474 (pericardial nephrocyte)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FBbt:00003184"^^xsd:string) Annotation(oboInOwl:hasDbXref "GO:0061320"^^xsd:string) Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135"^^xsd:string) obo:IAO_0000115 obo:CL_0000474 "An insect renal cell that filters hemolymph and is found with other pericardial nephrocytes in two rows flanking the dorsal vessel."^^xsd:string)
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FBbt:00003184"^^xsd:string) Annotation(oboInOwl:hasDbXref "GO:0061320"^^xsd:string) Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135") obo:IAO_0000115 obo:CL_0000474 "An insect renal cell that filters hemolymph and is found with other pericardial nephrocytes in two rows flanking the dorsal vessel."^^xsd:string)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0000474 "FBbt:00005058"^^xsd:string)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FBbt:00005058"^^xsd:string) Annotation(oboInOwl:hasDbXref "GO:0061320"^^xsd:string) oboInOwl:hasNarrowSynonym obo:CL_0000474 "pericardial cell"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0000474 "cell"^^xsd:string)
@@ -7348,7 +7348,7 @@ SubClassOf(Annotation(oboInOwl:is_inferred "true") obo:CL_0000485 obo:CL_0000097
 
 # Class: obo:CL_0000486 (garland cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135"^^xsd:string) Annotation(oboInOwl:hasDbXref "fbbt:00005059"^^xsd:string) obo:IAO_0000115 obo:CL_0000486 "A large binucleate cell that forms a 'garland' around the anterior end of the proventriculus (cardia) at its junction with the esophagus in both adults and larvae flies. Each cell is surrounded by a basement membrane and there are numerous micro-invaginations (lacunae) extending from the surface into the cytoplasm. At the mouth of each lacuna is a doubled filament forming a specialised filtration system (diaphragm). The filtrate is endocytosed from the lacunae."^^xsd:string)
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135") Annotation(oboInOwl:hasDbXref "fbbt:00005059"^^xsd:string) obo:IAO_0000115 obo:CL_0000486 "A large binucleate cell that forms a 'garland' around the anterior end of the proventriculus (cardia) at its junction with the esophagus in both adults and larvae flies. Each cell is surrounded by a basement membrane and there are numerous micro-invaginations (lacunae) extending from the surface into the cytoplasm. At the mouth of each lacuna is a doubled filament forming a specialised filtration system (diaphragm). The filtrate is endocytosed from the lacunae."^^xsd:string)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GO:0061321"^^xsd:string) oboInOwl:hasBroadSynonym obo:CL_0000486 "garland nephrocyte"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0000486 "BTO:0004596"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0000486 "FBbt:00005059"^^xsd:string)
@@ -8663,7 +8663,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0000618 "cell"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:CL_0000618 "sheath cell"^^xsd:string)
 SubClassOf(obo:CL_0000618 obo:CL_0000075)
 
-# Class: obo:CL_0000619 (supporting cell (sensu Nematoda))
+# Class: obo:CL_0000619 (support cell (sensu Nematoda))
 
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000619 "support cell (sensu Nematoda)"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0000619 "cell"^^xsd:string)
@@ -9566,7 +9566,7 @@ AnnotationAssertion(rdfs:label obo:CL_0000716 "lymph gland crystal cell"^^xsd:st
 SubClassOf(obo:CL_0000716 obo:CL_0000392)
 SubClassOf(obo:CL_0000716 obo:CL_0000735)
 
-# Class: obo:CL_0000717 (obsolete fusimotor neuron)
+# Class: obo:CL_0000717 (fusimotor neuron)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:15582775"^^xsd:string) obo:IAO_0000115 obo:CL_0000717 "OBSOLETE. A subset of motor neurons that innervates intrafusal muscle fibers and has small diameter axons."^^xsd:string)
 AnnotationAssertion(obo:IAO_0100001 obo:CL_0000717 "CL:0008037")
@@ -11137,7 +11137,7 @@ SubClassOf(obo:CL_0000851 obo:CL_0000151)
 SubClassOf(obo:CL_0000851 ObjectSomeValuesFrom(obo:BFO_0000050 obo:UBERON_0008904))
 DisjointClasses(obo:CL_0000851 obo:CL_0000855)
 
-# Class: obo:CL_0000852 (neuromast supporting cell)
+# Class: obo:CL_0000852 (neuromast support cell)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0125296509") obo:IAO_0000115 obo:CL_0000852 "Neuromast support cell is a non-sensory cell of the neuromast that extend between the sensory hair cells from the basement membrane to the apical surface; neuromast support cells are surrounded by neuromast mantle cells."^^xsd:string)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000852 "neuromast support cell"^^xsd:string)
@@ -11147,7 +11147,7 @@ SubClassOf(obo:CL_0000852 obo:CL_0000630)
 SubClassOf(obo:CL_0000852 ObjectSomeValuesFrom(obo:BFO_0000050 obo:UBERON_0008904))
 DisjointClasses(obo:CL_0000852 obo:CL_0000855)
 
-# Class: obo:CL_0000853 (olfactory epithelial supporting cell)
+# Class: obo:CL_0000853 (olfactory epithelial support cell)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "ISBN:0517223651"^^xsd:string) Annotation(oboInOwl:hasDbXref "SANBI:mhl"^^xsd:string) obo:IAO_0000115 obo:CL_0000853 "Olfactory epithelial support cell is a columnar cell that extends from the epithelial free margin to the basement membrane of the olfactory epithelium. This cell type has a large, vertically, elongate, euchromatic nucleus, along with other nuclei, forms a layer superficial to the cell body of the receptor cell; sends long somewhat irregular microvilli into the mucus layer; at the base, with expanded end-feet containing numerous lamellated dense bodies resembling lipofuscin of neurons."^^xsd:string)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0000853 "FMA:62302"^^xsd:string)
@@ -15958,7 +15958,7 @@ EquivalentClasses(obo:CL_0002180 ObjectIntersectionOf(obo:CL_0002178 ObjectSomeV
 SubClassOf(Annotation(oboInOwl:is_inferred "true") obo:CL_0002180 obo:CL_0002178)
 SubClassOf(obo:CL_0002180 obo:CL_0002659)
 
-# Class: obo:CL_0002181 (mucous neck cell of gastric gland)
+# Class: obo:CL_0002181 (mucus neck cell of gastric gland)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "ISBN:0517223651"^^xsd:string) obo:IAO_0000115 obo:CL_0002181 "A neck cell that secretes mucus within the stomach. Its products are distinct histochemically from those of the surface mucous cells of stomach."^^xsd:string)
 AnnotationAssertion(oboInOwl:created_by obo:CL_0002181 "tmeehan"^^xsd:string)
@@ -17594,7 +17594,7 @@ AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0002317 "cell"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:CL_0002317 "external limiting cell of vestibular epithelium"^^xsd:string)
 SubClassOf(obo:CL_0002317 obo:CL_0002316)
 
-# Class: obo:CL_0002318 (peripheral blood mesothelial cell)
+# Class: obo:CL_0002318 (periperhal blood mesothelial cell)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:14592528"^^xsd:string) obo:IAO_0000115 obo:CL_0002318 "A mesothelial cell capable of circulating in the blood by first losing its squamous character. This cell can incorporate into the regenerating mesothelium."^^xsd:string)
 AnnotationAssertion(oboInOwl:created_by obo:CL_0002318 "tmeehan"^^xsd:string)
@@ -19788,7 +19788,7 @@ SubClassOf(obo:CL_0002519 obo:CL_0002518)
 
 # Class: obo:CL_0002520 (nephrocyte)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135"^^xsd:string) obo:IAO_0000115 obo:CL_0002520 "An insect excretory cell that regulates haemolymph composition by filtration and filtrate endocytosis."^^xsd:string)
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135") obo:IAO_0000115 obo:CL_0002520 "An insect excretory cell that regulates haemolymph composition by filtration and filtrate endocytosis."^^xsd:string)
 AnnotationAssertion(oboInOwl:created_by obo:CL_0002520 "tmeehan"^^xsd:string)
 AnnotationAssertion(oboInOwl:creation_date obo:CL_0002520 "2011-02-08T01:34:56Z"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0002520 "BTO:0004597"^^xsd:string)
@@ -19830,7 +19830,7 @@ SubClassOf(obo:CL_0002523 obo:CL_0000653)
 
 # Class: obo:CL_0002524 (disseminated nephrocyte)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135"^^xsd:string) obo:IAO_0000115 obo:CL_0002524 "A disseminated nephrocyte is a nephrocyte that filters hemolymph and is found at scattered locations in the fat body or other tissues."^^xsd:string)
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") Annotation(oboInOwl:hasDbXref "PMID:19783135") obo:IAO_0000115 obo:CL_0002524 "A disseminated nephrocyte is a nephrocyte that filters hemolymph and is found at scattered locations in the fat body or other tissues."^^xsd:string)
 AnnotationAssertion(oboInOwl:created_by obo:CL_0002524 "tmeehan"^^xsd:string)
 AnnotationAssertion(oboInOwl:creation_date obo:CL_0002524 "2011-02-08T02:07:33Z"^^xsd:string)
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:CL_0002524 "cell"^^xsd:string)
@@ -20683,7 +20683,7 @@ AnnotationAssertion(rdfs:label obo:CL_0002608 "hippocampal neuron"^^xsd:string)
 EquivalentClasses(obo:CL_0002608 ObjectIntersectionOf(obo:CL_0000117 ObjectSomeValuesFrom(obo:BFO_0000050 obo:UBERON_0001954)))
 SubClassOf(Annotation(oboInOwl:is_inferred "true") obo:CL_0002608 obo:CL_0000117)
 
-# Class: obo:CL_0002609 (obsolete neuron of cerebral cortex)
+# Class: obo:CL_0002609 (neuron of cerebral cortex)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:tfm") obo:IAO_0000115 obo:CL_0002609 "OBSOLETE. A CNS neuron of the cerebral cortex."^^xsd:string)
 AnnotationAssertion(obo:IAO_0100001 obo:CL_0002609 "CL:0010012")
@@ -21583,7 +21583,7 @@ AnnotationAssertion(rdfs:label obo:CL_0005013 "single ciliated epithelial cell"^
 SubClassOf(obo:CL_0005013 obo:CL_0000066)
 SubClassOf(obo:CL_0005013 ObjectSomeValuesFrom(obo:BFO_0000051 obo:GO_0005929))
 
-# Class: obo:CL_0005014 (auditory epithelial supporting cell)
+# Class: obo:CL_0005014 (auditory epithelial support cell)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "CL:CVS"^^xsd:string) Annotation(oboInOwl:hasDbXref "GOC:tfm") obo:IAO_0000115 obo:CL_0005014 "A non-sensory cell that extends from the basement membrane to the apical surface of the auditory epithelium and provides support for auditory hair cells."^^xsd:string)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0005014 "auditory epithelial support cell"^^xsd:string)
@@ -27766,7 +27766,7 @@ AnnotationAssertion(oboInOwl:id obo:CL_2000035 "CL:2000035"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:CL_2000035 "anterior lateral line neuromast mantle cell"^^xsd:string)
 EquivalentClasses(obo:CL_2000035 ObjectIntersectionOf(obo:CL_0000851 ObjectSomeValuesFrom(obo:BFO_0000050 obo:UBERON_2001470)))
 
-# Class: obo:CL_2000036 (anterior lateral line neuromast supporting cell)
+# Class: obo:CL_2000036 (anterior lateral line neuromast support cell)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:TermGenie") obo:IAO_0000115 obo:CL_2000036 "Any neuromast support cell that is part of a anterior lateral line."^^xsd:string)
 AnnotationAssertion(oboInOwl:created_by obo:CL_2000036 "TermGenie"^^xsd:string)
@@ -27797,7 +27797,7 @@ AnnotationAssertion(oboInOwl:id obo:CL_2000038 "CL:2000038"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:CL_2000038 "posterior lateral line neuromast mantle cell"^^xsd:string)
 EquivalentClasses(obo:CL_2000038 ObjectIntersectionOf(obo:CL_0000851 ObjectSomeValuesFrom(obo:BFO_0000050 obo:UBERON_0006334)))
 
-# Class: obo:CL_2000039 (posterior lateral line neuromast supporting cell)
+# Class: obo:CL_2000039 (posterior lateral line neuromast support cell)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:TermGenie") obo:IAO_0000115 obo:CL_2000039 "Any neuromast support cell that is part of a posterior lateral line."^^xsd:string)
 AnnotationAssertion(oboInOwl:created_by obo:CL_2000039 "TermGenie"^^xsd:string)
@@ -28548,7 +28548,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_4023006 "nuclear bag2 intraf
 AnnotationAssertion(rdfs:label obo:CL_4023006 "static nuclear bag fiber")
 SubClassOf(obo:CL_4023006 obo:CL_4023004)
 
-# Class: obo:CL_4023007 (L2/3 bipolar vip GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023007 (L2/3 bipolar Vip GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:26420784"^^xsd:string) obo:IAO_0000115 obo:CL_4023007 "A vip GABAergic cortical interneuron with bipolar morphology, with a soma found in L2/3. L2/3 bipolar vip cells have extending axons across all layers (with preferences for layers II/III and Va) and a dendritic tree that is vertically more restricted than deeper layer vip cells and extend fewer dendrites into the layers outside their home layer (location of soma). L2/3 bipolar vip cells have great variability in firing patterns, though most are continuous adapting. L2/3 bipolar vip cells are more depolarized in their resting state, had less fast rectification, and had smaller after hyperpolarization than deeper vip cells.")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> obo:CL_4023007 <http://orcid.org/0000-0001-7258-9596>)
@@ -28597,12 +28597,13 @@ SubClassOf(obo:CL_4023010 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023010 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023010 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_000005460))
 
-# Class: obo:CL_4023011 (lamp5 GABAergic cortical interneuron)
+# Class: obo:CL_4023011 (Lamp5 GABAergic cortical interneuron)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:30382198"^^xsd:string) obo:IAO_0000115 obo:CL_4023011 "A GABAergic neuron located in the cerebral cortex that expresses Lamp5")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023011 <http://orcid.org/0000-0001-7258-9596>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_4023011 "ILX:0770149"^^xsd:string)
 AnnotationAssertion(oboInOwl:inSubset obo:CL_4023011 <http://purl.obolibrary.org/obo/cl#BDS_subset>)
+AnnotationAssertion(rdfs:comment obo:CL_4023011 "test change")
 AnnotationAssertion(rdfs:label obo:CL_4023011 "lamp5 GABAergic cortical interneuron")
 EquivalentClasses(obo:CL_4023011 ObjectIntersectionOf(obo:CL_0000099 ObjectSomeValuesFrom(obo:RO_0002100 obo:UBERON_0000956) ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534) ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_000032148)))
 
@@ -28625,7 +28626,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:CL_4023013 <http://purl.obolibrary.org
 AnnotationAssertion(rdfs:label obo:CL_4023013 "corticothalamic-projecting glutamatergic cortical neuron")
 EquivalentClasses(obo:CL_4023013 ObjectIntersectionOf(obo:CL_0000679 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0070029) ObjectSomeValuesFrom(obo:RO_0002100 obo:UBERON_0000956)))
 
-# Class: obo:CL_4023014 (L5 vip cortical GABAergic interneuron (Mus musculus))
+# Class: obo:CL_4023014 (L5 Vip cortical GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:26420784"^^xsd:string) Annotation(oboInOwl:hasDbXref "PMID:26612957"^^xsd:string) obo:IAO_0000115 obo:CL_4023014 "A vip GABAergic cortical interneuron with a soma found in L5. L5 vip cells have mostly local morphology with some deep-projecting axons. They show only moderate resistance, comparable to that of sst subclass and unlike typical Vip subclass cells that tend to show high input resistance. L5 vip cells show particularly low resting membrane potential.")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> obo:CL_4023014 <http://orcid.org/0000-0001-7258-9596>)
@@ -28647,7 +28648,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:CL_4023015 <http://purl.obolibrary.org
 AnnotationAssertion(rdfs:label obo:CL_4023015 "sncg GABAergic cortical interneuron")
 EquivalentClasses(obo:CL_4023015 ObjectIntersectionOf(obo:CL_0000099 ObjectSomeValuesFrom(obo:RO_0002100 obo:UBERON_0000956) ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534) ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_000015325)))
 
-# Class: obo:CL_4023016 (vip GABAergic cortical interneuron)
+# Class: obo:CL_4023016 (Vip GABAergic cortical interneuron)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33186530"^^xsd:string) obo:IAO_0000115 obo:CL_4023016 "A GABAergic neuron located in the cerebral cortex that expresses vasoactive intestinal polypeptide")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023016 <http://orcid.org/0000-0001-7258-9596>)
@@ -28674,7 +28675,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:CL_4023018 <http://purl.obolibrary.org
 AnnotationAssertion(rdfs:label obo:CL_4023018 "pvalb GABAergic cortical interneuron")
 EquivalentClasses(obo:CL_4023018 ObjectIntersectionOf(obo:CL_0000099 ObjectSomeValuesFrom(obo:RO_0002100 obo:UBERON_0000956) ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534) ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_000013502)))
 
-# Class: obo:CL_4023019 (L5/6 cck, vip cortical GABAergic interneuron (Mus musculus))
+# Class: obo:CL_4023019 (L5/6 CCK, Vip cortical GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:CL_4023019 "A vip GABAergic cortical interneuron that expresses cck. L5/6 cck cells have soma found mainly in L5 and L6 and have large axonal arborization.")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> obo:CL_4023019 <http://orcid.org/0000-0001-7258-9596>)
@@ -28699,7 +28700,7 @@ AnnotationAssertion(rdfs:label obo:CL_4023021 "static gamma motor neuron")
 SubClassOf(obo:CL_4023021 obo:CL_0008037)
 SubClassOf(obo:CL_4023021 ObjectSomeValuesFrom(obo:RO_0002120 obo:CL_4023006))
 
-# Class: obo:CL_4023022 (canopy lamp5 GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023022 (canopy Lamp5 GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:30413647"^^xsd:string) obo:IAO_0000115 obo:CL_4023022 "A Lamp5 GABAergic cortical interneuron that has extended axons in the surface of L1. Canopy Lamp5 cells resemble neurogliaform cells in having elongated horizontal axonal arbors largely confined to L1; but the dendritic arbors are wider and have fewer branches, while the axon is less tortuous and extends further from the soma")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023022 <http://orcid.org/0000-0001-7258-9596>)
@@ -28711,7 +28712,7 @@ SubClassOf(obo:CL_4023022 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023022 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023022 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_Q9D387))
 
-# Class: obo:CL_4023023 (L5,6 neurogliaform lamp5 GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023023 (L5,6 Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:26727548"^^xsd:string) obo:IAO_0000115 obo:CL_4023023 "A lamp 5 GABAergic cortical interneuron with neurogliaform morphology with a soma found in L5,6. L5,6 NGC lamp5 have deep afterhyperpolarization (AHP) but narrow action potentials (APs). Unlike other deep neurogliaform cells (which are caudal ganglionic eminence (CGE) derived), L5,6 NGC lamp5 cells are medial ganglionic eminence (MGE)-derived")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023023 <http://orcid.org/0000-0001-7258-9596>)
@@ -28725,7 +28726,7 @@ SubClassOf(obo:CL_4023023 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023023 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023023 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_Q9D387))
 
-# Class: obo:CL_4023024 (neurogliaform lamp5 GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023024 (Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:27477017"^^xsd:string) obo:IAO_0000115 obo:CL_4023024 "A lamp5 GABAergic cortical interneuron with layer-adapting morphology. NGC lamp5 cells have a small round soma, short dendrites, and a wide dense axonal arbor that tends to establish a dense axonal mesh with high connection probability both to themselves and L2 pyramidal cells. NGC lamp5 cells have unique synaptic properties that distinguish them from other GABAergic interneurons, including the release of GABA to the extracellular space via volume transmission, and the ability to produce GABA-B responses in connected postsynaptic targets.")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023024 <http://orcid.org/0000-0001-7258-9596>)
@@ -28739,7 +28740,7 @@ SubClassOf(obo:CL_4023024 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023024 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023024 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_Q9D387))
 
-# Class: obo:CL_4023025 (long-range projecting sst GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023025 (Long-range projecting Sst GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:26727548"^^xsd:string) obo:IAO_0000115 obo:CL_4023025 "A sst GABAergic cortical interneuron that is both an interneuron and a projecting neuron. They are found in all layers from upper L2/3 down to the bottom of L6. They have long-range projections, some with axons fading into white matter. These cells have low rebound potential, low hyperpolarization sag, and high variability in membrane time constant.")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023025 <http://orcid.org/0000-0001-7258-9596>)
@@ -28752,7 +28753,7 @@ SubClassOf(obo:CL_4023025 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023025 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023025 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_P60041))
 
-# Class: obo:CL_4023027 (L5 T-Martinotti sst GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023027 (L5 T-Martinotti Sst GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:28254942"^^xsd:string) Annotation(oboInOwl:hasDbXref "PMID:29326172"^^xsd:string) obo:IAO_0000115 obo:CL_4023027 "A sst GABAergic cortical interneuron with a soma found in L5 and possesses 'T-shaped' Martinotti morphologies with local axonal plexus in L5a and translaminar axons restricted to the uppermost part of L1. They show low-threshold spiking patterns with strong rebound firing, and inhibit the L1 apical tuft of nearby pyramidal cells.")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023027 <http://orcid.org/0000-0001-7258-9596>)
@@ -28767,7 +28768,7 @@ SubClassOf(obo:CL_4023027 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023027 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023027 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_P60041))
 
-# Class: obo:CL_4023028 (L5 non-Martinotti sst GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023028 (L5 non-Martinotti Sst GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:28254942"^^xsd:string) Annotation(oboInOwl:hasDbXref "PMID:29326172"^^xsd:string) obo:IAO_0000115 obo:CL_4023028 "A sst GABAergic cortical interneuron with a soma found in lower L5 with mostly local axonal arborization but with some sparse ascending axons. L5 non-Martinotti sst cells show somatic localization and local axon plexus in L5b and L5b/6 and substantial innervation of L3 and L4, and receive thalamic input from the ventral posteromedial nucleus and specifically target L4 neurons, avoiding L5 pyramidal cells. L5 non-Martinotti sst cells tend to show a higher input resistance and seem to be less stuttering.")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023028 <http://orcid.org/0000-0001-7258-9596>)
@@ -28780,7 +28781,7 @@ SubClassOf(obo:CL_4023028 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023028 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023028 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_P60041))
 
-# Class: obo:CL_4023030 (L2/3/5 fan Martinotti sst GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023030 (L2/3/5 fan Martinotti Sst GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:27225074"^^xsd:string) Annotation(oboInOwl:hasDbXref "PMID:27477017"^^xsd:string) Annotation(oboInOwl:hasDbXref "PMID:28254942"^^xsd:string) Annotation(oboInOwl:hasDbXref "PMID:29326172"^^xsd:string) obo:IAO_0000115 obo:CL_4023030 "A sst GABAergic cortical interneuron that has \"fanning-out' Martinotti morphology that is found in layer 2/3/5 of the cerebral cortex. They have local axon arbor and long ascending axons that spreads horizontally and arborizes significantly in L1.")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023030 <http://orcid.org/0000-0001-7258-9596>)
@@ -28795,7 +28796,7 @@ SubClassOf(obo:CL_4023030 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023030 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023030 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_P60041))
 
-# Class: obo:CL_4023031 (L4 sst GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023031 (L4 Sst GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:CL_4023031 "A sst GABAergic cortical interneuron with a soma found in lower L2/3 and upper 5, L4 Sst cells have Martinotti morphology with ascending axons but denser local axons and sparser ‘fanning-out’ projections to L1. L4 sst cells have smaller membrane time constant to calb2 (L2/3/5 fan Martinotti Cell) and non-zero afterdepolarization (ADP).")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023031 <http://orcid.org/0000-0001-7258-9596>)
@@ -28809,7 +28810,7 @@ SubClassOf(obo:CL_4023031 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1009
 SubClassOf(obo:CL_4023031 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
 SubClassOf(obo:CL_4023031 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_P60041))
 
-# Class: obo:CL_4023034 (obsolete L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023034 (L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:CL_4023034 "OBSOLETE A sst GABAergic cortical interneuron transcriptomically between the sst and the pvalb families with a soma found in L2/3. Some L2/3 PV-like sst cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like sst cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like sst cells have high maximum firing rate variability, with many classified as belonging to the pvalb subclass on the basis of electrophysiology.")
 AnnotationAssertion(obo:IAO_0100001 obo:CL_4023034 "PCL:1000002")
@@ -28819,7 +28820,7 @@ AnnotationAssertion(rdfs:comment obo:CL_4023034 "Moved to PCL - see https://gith
 AnnotationAssertion(rdfs:label obo:CL_4023034 "obsolete L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
 AnnotationAssertion(owl:deprecated obo:CL_4023034 "true"^^xsd:boolean)
 
-# Class: obo:CL_4023036 (chandelier pvalb GABAergic cortical interneuron)
+# Class: obo:CL_4023036 (Chandelier Pvalb GABAergic cortical interneuron)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:27477017"^^xsd:string) obo:IAO_0000115 obo:CL_4023036 "A pvalb GABAergic cortical interneuron that is recognizable by the straight terminal axonal 'cartridges' of vertically oriented strings of synaptic boutons. Chandelier PV cells' boutons target exclusively the axon initial segment (AIS) of pyramidal cells, with a single cell innervating hundreds of pyramidal cells in a clustered manner.")
 AnnotationAssertion(oboInOwl:created_by obo:CL_4023036 <http://orcid.org/0000-0001-7258-9596>)
@@ -29055,7 +29056,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:CL_4023066 <http://purl.obolibrary.org
 AnnotationAssertion(rdfs:label obo:CL_4023066 "horizontal pyramidal neuron")
 EquivalentClasses(obo:CL_4023066 ObjectIntersectionOf(obo:CL_0000117 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0070016)))
 
-# Class: obo:CL_4023067 (obsolete Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023067 (Martinotti morphology L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:CL_4023067 "OBSOLETE A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has Martinotti morphology.")
 AnnotationAssertion(obo:IAO_0100001 obo:CL_4023067 "PCL:1000004")
@@ -29081,7 +29082,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_4023070 "CGE cortical intern
 AnnotationAssertion(rdfs:label obo:CL_4023070 "caudal ganglionic eminence derived GABAergic cortical interneuron")
 EquivalentClasses(obo:CL_4023070 ObjectIntersectionOf(obo:CL_0000099 ObjectSomeValuesFrom(obo:RO_0002100 obo:UBERON_0000956) ObjectSomeValuesFrom(obo:RO_0002202 obo:UBERON_0004026) ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534)))
 
-# Class: obo:CL_4023071 (L5/6 cck cortical GABAergic interneuron (Mus musculus))
+# Class: obo:CL_4023071 (L5/6 CCK cortical GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:CL_4023071 "A GABAergic cortical interneuron that expresses cck. L5/6 cck cells have soma found mainly in L5 and L6 and have large axonal arborization.")
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> obo:CL_4023071 <http://orcid.org/0000-0001-7258-9596>)
@@ -29127,7 +29128,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:CL_4023077 <http://purl.obolibrary.org
 AnnotationAssertion(rdfs:label obo:CL_4023077 "bitufted neuron")
 EquivalentClasses(obo:CL_4023077 ObjectIntersectionOf(obo:CL_0000099 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0070012)))
 
-# Class: obo:CL_4023078 (obsolete basket morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
+# Class: obo:CL_4023078 (basket morphology L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:CL_4023078 "OBSOLETE A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has basket morphology.")
 AnnotationAssertion(obo:IAO_0100001 obo:CL_4023078 "PCL:1000003")

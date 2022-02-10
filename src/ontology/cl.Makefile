@@ -22,7 +22,7 @@
 
 .PHONY: rdiff
 rdiff: 
-	checkout master -- $(SRC)-edit.owl -o rdifftmp.owl
+	git checkout master -- $(SRC)-edit.owl -o rdifftmp.owl
 	$(ROBOT) diff -labels True -left rdifftmp.owl --right $(SRC)-edit.owl -format markdown --output diff.md
 
 mirror/clo.owl: mirror/clo.trigger

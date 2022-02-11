@@ -16,18 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     container: obolibrary/odklite:v1.2.32
     steps:
-    steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - run: echo "CHANGED_FILES=$(git diff --name-only ${{ github.event.before }}..${{ github.event.after }})" >> $GITHUB_ENV
       # Checks-out main branch under "main" directory
       - uses: actions/checkout@v2
         with:
           ref: master
           path: master
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/src/ontology/$(CHANGED_FILES) --right src/ontology/$(CHANGED_FILES) -f markdown -o classification-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/src/ontology/cl-edit.owl --right src/ontology/cl-edit.owl -f markdown -o classification-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
@@ -38,6 +34,7 @@ jobs:
   post_comment:
     needs: classify_pr
     runs-on: ubuntu-latest
+    container: docker://dvcorg/cml-py3:latest
     steps:
       - uses: actions/checkout@v2
       - name: Download diff

@@ -2617,6 +2617,7 @@ Declaration(Class(obo:CL_4023120))
 Declaration(Class(obo:CL_4023121))
 Declaration(Class(obo:CL_4023122))
 Declaration(Class(obo:CL_4023129))
+Declaration(Class(obo:CL_4023137))
 Declaration(Class(obo:CL_4028001))
 Declaration(Class(obo:CL_4028002))
 Declaration(Class(obo:CL_4028003))
@@ -29500,6 +29501,13 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:17565741"^^xsd:string) o
 AnnotationAssertion(rdfs:label obo:CL_4023129 "retinoblast")
 SubClassOf(obo:CL_4023129 obo:CL_0009004)
 SubClassOf(obo:CL_4023129 ObjectSomeValuesFrom(obo:BFO_0000050 obo:UBERON_0000966))
+
+# Class: obo:CL_4023137 (new term test)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CL_4023137 "test")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> obo:CL_4023137 <http://orcid.org/0000-0001-7258-9596>)
+AnnotationAssertion(rdfs:label obo:CL_4023137 "new term test")
+SubClassOf(obo:CL_4023137 obo:CL_0000000)
 
 # Class: obo:CL_4028001 (pulmonary capillary endothelial cell)
 

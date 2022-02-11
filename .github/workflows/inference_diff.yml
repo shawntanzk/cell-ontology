@@ -45,4 +45,4 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         uses: NejcZdovc/comment-pr@v1.1.1
         with:
-          file: "classification-diff.md"
+          file: "../../classification-diff.md"

@@ -40,11 +40,8 @@ jobs:
         with:
           name: classification-diff.md
           path: classification-diff.md
-      - name: Prepare comment
-        run: "echo \"Here's a diff of how these changes impact the classified ontology: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>comment.md"
-      - name: Post comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         uses: NejcZdovc/comment-pr@v1.1.1
         with:
-          file: "comment.md"
+          file: "classification-diff.md"

@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     container: obolibrary/odklite:v1.2.32
     steps:
+    steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0

@@ -40,6 +40,7 @@ jobs:
         with:
           name: classification-diff.md
           path: classification-diff.md
+      - name: Post comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         uses: NejcZdovc/comment-pr@v1.1.1

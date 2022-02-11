@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: comment.md
-          path: src/ontology/comment.md
+          path: ../src/ontology/comment.md
           retention-days: 1
       - name: Post comment
         env:

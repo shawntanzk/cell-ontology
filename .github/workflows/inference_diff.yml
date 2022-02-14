@@ -59,7 +59,7 @@ jobs:
           name: edit-diff.md
           path: edit-diff.md
       - name: Prepare edit comment
-        run: "echo \"Here's a diff of your unreasoned edit file: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>edit-comment.md"
+        run: "echo \"Here's a diff of your unreasoned edit file: \n\" >comment.md; cat edit-diff.md/edit-diff.md >>edit-comment.md"
       - name: Post edit comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -67,7 +67,7 @@ jobs:
         with:
           file: "../../edit-comment.md"
       - name: Prepare reasoned comment
-        run: "echo \"Here's a diff of your reasoned file: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>reasoned-comment.md"
+        run: "echo \"Here's a diff of your reasoned file: \n\" >comment.md; cat reasoned-diff.md/reasoned-diff.md >>reasoned-comment.md"
       - name: Post reasoned comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

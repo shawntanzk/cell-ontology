@@ -1,4 +1,4 @@
-name: 'Create ROBOT diffs on Pull requests'
+nname: 'Create ROBOT diffs on Pull requests'
 
 on:
   # Triggers the workflow on pull request events for the master branch
@@ -10,9 +10,25 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  
-  
-  classify_pr:
+  classify_pr_unreasoned:
+    runs-on: ubuntu-latest
+    container: obolibrary/odklite:v1.2.32
+    steps:
+      - uses: actions/checkout@v2
+      # Checks-out main branch under "main" directory
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+          path: master
+      - name: Diff classification
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/src/ontology/cl-edit.owl --left-catalog master/src/ontology/catalog-v001.xml --right src/ontology/cl-edit.owl --right-catalog src/ontology/catalog-v001.xml -f markdown -o classification-diff.md
+      - name: Upload diff
+        uses: actions/upload-artifact@v2
+        with:
+          name: edit-diff.md
+          path: edit-diff.md
+          
+  classify_pr_reasoned:
     runs-on: ubuntu-latest
     container: obolibrary/odklite:v1.2.32
     steps:
@@ -27,8 +43,8 @@ jobs:
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
-          name: classification-diff.md
-          path: classification-diff.md
+          name: reasoned-diff.md
+          path: reasoned-diff.md
           
   post_comment:
     needs: classify_pr
@@ -38,13 +54,19 @@ jobs:
       - name: Download diff
         uses: actions/download-artifact@v2
         with:
-          name: classification-diff.md
-          path: classification-diff.md
-      - name: Prepare comment
-        run: "echo \"Here's a diff of how these changes impact the ontology: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>comment.md"
-      - name: Post comment
+          name: edit-diff.md
+          path: edit-diff.md
+      - name: Prepare edit comment
+        run: "echo \"Here's a diff of your unreasoned edit file: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>edit-comment.md"
+      - name: Post edit comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         uses: NejcZdovc/comment-pr@v1.1.1
         with:
-          file: "../../comment.md"
+          file: "../../edit-comment.md"
+      - name: Post reasoned comment
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        uses: NejcZdovc/comment-pr@v1.1.1
+        with:
+          file: "../../reasoned-comment.md"

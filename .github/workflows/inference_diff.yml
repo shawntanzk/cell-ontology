@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Classify ontology
-        run: cd src/ontology; make -j 4 ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' cl.owl
+        run: cd src/ontology; make IMP=FALSE PAT=FALSE MIR=FALSE cl.owl
       - name: Upload PR reasoned.owl
         uses: actions/upload-artifact@v2
         with:
@@ -31,7 +31,7 @@ jobs:
         with:
           ref: master
       - name: Classify ontology
-        run: cd src/ontology; make -j 4 ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' cl.owl
+        run: cd src/ontology; make IMP=FALSE PAT=FALSE MIR=FALSE cl.owl
       - name: Upload master reasoned.owl
         uses: actions/upload-artifact@v2
         with:

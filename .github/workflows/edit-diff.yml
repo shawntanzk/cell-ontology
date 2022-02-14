@@ -21,12 +21,12 @@ jobs:
           ref: master
           path: master
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/src/ontology/cl-edit.owl --left-catalog master/src/ontology/catalog-v001.xml --right src/ontology/cl-edit.owl --right-catalog src/ontology/catalog-v001.xml -f markdown -o classification-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/src/ontology/cl-edit.owl --left-catalog master/src/ontology/catalog-v001.xml --right src/ontology/cl-edit.owl --right-catalog src/ontology/catalog-v001.xml -f markdown -o edit-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
-          name: classification-diff.md
-          path: classification-diff.md
+          name: edit-diff.md
+          path: edit-diff.md
           
   post_comment:
     needs: classify_pr
@@ -36,13 +36,13 @@ jobs:
       - name: Download diff
         uses: actions/download-artifact@v2
         with:
-          name: classification-diff.md
-          path: classification-diff.md
+          name: edit-diff.md
+          path: edit-diff.md
       - name: Prepare comment
-        run: "echo \"Here's a diff of your edit file (unreasoned) \n\" >comment.md; cat classification-diff.md/classification-diff.md >>comment.md"
+        run: "echo \"Here's a diff of your edit file (unreasoned) \n\" >edit-comment.md; cat edit-diff.md/edit-diff.md >>edit-comment.md"
       - name: Post comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         uses: NejcZdovc/comment-pr@v1.1.1
         with:
-          file: "../../comment.md"
+          file: "../../edit-comment.md"

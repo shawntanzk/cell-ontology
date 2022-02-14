@@ -39,9 +39,9 @@ jobs:
           ref: master
           path: master
       - name: Build reasoned Ontology
-        run: make src/ontology/cl.owl -B
+        run: make cl.owl -B
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/src/ontology/cl.owl --right src/ontology/cl.owl -f markdown -o reasoned-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/cl.owl --right cl.owl -f markdown -o reasoned-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
@@ -59,7 +59,7 @@ jobs:
           name: edit-diff.md
           path: edit-diff.md
       - name: Prepare edit comment
-        run: "echo \"Here's a diff of your unreasoned edit file: \n\" >comment.md; cat edit-diff.md/edit-diff.md >>edit-comment.md"
+        run: "echo \"Here's a diff of your unreasoned edit file: \n\" >edit-comment.md; cat edit-diff.md/edit-diff.md >>edit-comment.md"
       - name: Post edit comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -67,7 +67,7 @@ jobs:
         with:
           file: "../../edit-comment.md"
       - name: Prepare reasoned comment
-        run: "echo \"Here's a diff of your reasoned file: \n\" >comment.md; cat reasoned-diff.md/reasoned-diff.md >>reasoned-comment.md"
+        run: "echo \"Here's a diff of your reasoned file: \n\" >reasoned-comment.md; cat reasoned-diff.md/reasoned-diff.md >>reasoned-comment.md"
       - name: Post reasoned comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

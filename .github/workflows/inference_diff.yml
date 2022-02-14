@@ -1,4 +1,4 @@
-name: Inference diff
+name: 'Create ROBOT diffs for full file on Pull requests'
 
 on:
   # Triggers the workflow on pull request events for the master branch

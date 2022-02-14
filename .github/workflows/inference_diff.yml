@@ -38,8 +38,10 @@ jobs:
         with:
           ref: master
           path: master
+      - name: Build reasoned Ontology
+        run: make cl.owl
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/src/ontology/cl-edit.owl --right src/ontology/cl-edit.owl -f markdown -o classification-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/cl.owl --right cl.owl -f markdown -o classification-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
@@ -47,7 +49,8 @@ jobs:
           path: reasoned-diff.md
           
   post_comment:
-    needs: classify_pr
+    needs: classify_pr_unreasoned
+    needs: classify_pr_reasoned
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -64,6 +67,8 @@ jobs:
         uses: NejcZdovc/comment-pr@v1.1.1
         with:
           file: "../../edit-comment.md"
+      - name: Prepare reasoned comment
+        run: "echo \"Here's a diff of your reasoned file: \n\" >comment.md; cat classification-diff.md/classification-diff.md >>reasoned-comment.md"
       - name: Post reasoned comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

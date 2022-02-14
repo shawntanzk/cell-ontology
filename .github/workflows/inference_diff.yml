@@ -49,8 +49,7 @@ jobs:
           path: reasoned-diff.md
           
   post_comment:
-    needs: classify_pr_unreasoned
-    needs: classify_pr_reasoned
+    needs: [classify_pr_unreasoned, classify_pr_reasoned]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

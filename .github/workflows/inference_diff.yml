@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: reasoned-pr.owl
-          path: src/ontology/reasoned.owl
+          path: src/ontology/reasoned-pr.owl
           retention-days: 1
   classify_master:
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: reasoned-master.owl
-          path: src/ontology/reasoned.owl
+          path: src/ontology/reasoned-master.owl
           retention-days: 1
   diff_classification:
     needs:

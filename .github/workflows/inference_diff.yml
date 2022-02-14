@@ -17,10 +17,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Classify ontology
         run: cd src/ontology; make IMP=FALSE PAT=FALSE MIR=FALSE cl.owl
-      - name: Upload PR reasoned.owl
+      - name: Upload PR cl.owl
         uses: actions/upload-artifact@v2
         with:
-          name: reasoned-pr.owl
+          name: cl-pr.owl
           path: src/ontology/cl.owl
           retention-days: 1
   classify_master:
@@ -32,10 +32,10 @@ jobs:
           ref: master
       - name: Classify ontology
         run: cd src/ontology; make IMP=FALSE PAT=FALSE MIR=FALSE cl.owl
-      - name: Upload master reasoned.owl
+      - name: Upload master cl.owl
         uses: actions/upload-artifact@v2
         with:
-          name: reasoned-master.owl
+          name: cl-master.owl
           path: src/ontology/cl.owl
           retention-days: 1
   diff_classification:
@@ -49,15 +49,15 @@ jobs:
       - name: Download master classification
         uses: actions/download-artifact@v2
         with:
-          name: reasoned-master.owl
-          path: src/ontology/reasoned-master.owl
+          name: cl-master.owl
+          path: src/ontology/cl-master.owl
       - name: Download PR classification
         uses: actions/download-artifact@v2
         with:
-          name: reasoned-pr.owl
-          path: src/ontology/reasoned-pr.owl
+          name: cl-pr.owl
+          path: src/ontology/cl-pr.owl
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; cd src/ontology; robot diff --left ../../reasoned-master.owl/cl.owl --left-catalog catalog-v001.xml --right ../../reasoned-pr.owl/cl.owl --right-catalog catalog-v001.xml -f markdown -o classification-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; cd src/ontology; robot diff --left ../../cl-master.owl/cl.owl --left-catalog catalog-v001.xml --right ../../cl-pr.owl/cl.owl --right-catalog catalog-v001.xml -f markdown -o classification-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:

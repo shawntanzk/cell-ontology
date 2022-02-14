@@ -39,7 +39,7 @@ jobs:
           ref: master
           path: master
       - name: Build reasoned Ontology
-        run: make cl.owl
+        run: make cl.owl -B
       - name: Diff classification
         run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/cl.owl --right cl.owl -f markdown -o reasoned-diff.md
       - name: Upload diff

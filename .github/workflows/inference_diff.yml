@@ -39,9 +39,9 @@ jobs:
           ref: master
           path: master
       - name: Build reasoned Ontology
-        run: make cl-full.owl
+        run: run.sh src/ontology/cl.owl
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/cl-full.owl --right cl-full.owl -f markdown -o reasoned-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --left master/cl.owl --right cl.owl -f markdown -o reasoned-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:

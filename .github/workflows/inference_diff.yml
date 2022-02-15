@@ -107,7 +107,7 @@ jobs:
           name: edit-diff.md
           path: edit-diff.md
       - name: Prepare edit file comment
-        run: "echo \"<details><summary>Here's a diff of your edit file (unreasoned) \n\" >edit-comment.md; cat edit-diff.md/edit-diff.md >>edit-comment.md; echo "</details>" >>edit-comment.md"
+        run: "echo \"Here's a diff of your edit file (unreasoned) \n\" >edit-comment.md; cat edit-diff.md/edit-diff.md >>edit-comment.md"
       - name: Post comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

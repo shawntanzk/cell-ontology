@@ -109,7 +109,7 @@ jobs:
       - name: Prepare edit file comment
         run: "echo \"Here's a diff of your edit file (unreasoned) \n\" >edit-comment.md; cat edit-diff.md/edit-diff.md >>edit-comment.md"
       - name: compact comments
-        run: echo -e "<details>\n <summary> $(edit-comment.md) \n <\details>"
+        run: echo -e "<details>\n <summary> $(edit-comment.md) \n <\details>" >>edit-comment.md
       - name: Post comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

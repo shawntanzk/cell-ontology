@@ -17,7 +17,7 @@ jobs:
           ref: master
           path: master
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --labels True --left master/cl-full.owl --right src/ontology/cl-full.owl -f markdown -o full-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --labels True --left master/cl-full.owl --right cl-full.owl -f markdown -o full-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
@@ -34,7 +34,7 @@ jobs:
           name: full-diff.md
           path: full-diff.md
       - name: Prepare edit file comment
-        run: "echo \"<details>\n <summary> Here's a diff of your edit file (unreasoned) </summary> \n\" >full-comment.md; cat full-diff.md/full-diff.md >>full-comment.md"
+        run: "echo \"<details>\n <summary> Here's a diff of your full file compared to master branch </summary> \n\" >full-comment.md; cat full-diff.md/full-diff.md >>full-comment.md"
       - name: Post comment
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

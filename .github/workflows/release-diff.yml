@@ -9,8 +9,9 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  run_if: github.event.label.name == 'release'
   full_file:
+    run_if: 
+      if: github.event.label.name == 'release'
     runs-on: ubuntu-latest
     container: obolibrary/odklite:v1.2.32
     steps:

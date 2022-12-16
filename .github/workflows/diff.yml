@@ -15,12 +15,14 @@ jobs:
         run: |
             git branch incoming
             git branch --contains master | grep incoming | wc -l 
+        id: git_check
       - name: Fail if not up to date
-        if: 
+        if: steps.git_check.outputs == '0'
         run: |
         echo "your branch is not up to date, please update from master."
         exit 1
   edit_file:
+    needs: check_branch
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     container: obolibrary/odklite:v1.3.0
@@ -54,6 +56,7 @@ jobs:
           name: edit-diff.md
           path: edit-diff.md
   classify_branch:
+    needs: check_branch
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     container: obolibrary/odklite:v1.3.0
@@ -81,6 +84,7 @@ jobs:
           path: src/ontology/cl-simple.owl
           retention-days: 1
   classify_main:
+    needs: check_branch
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     container: obolibrary/odklite:v1.3.0

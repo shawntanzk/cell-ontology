@@ -24,7 +24,8 @@ jobs:
         if: steps.check.outputs.triggered == 'true'
       - id: git_check
         run: |
-            git branch --contains master | grep comment-branch | wc -l 
+            git branch incoming 
+            git branch --contains master | grep incoming | wc -l 
   edit_file:
     needs: 
       - check_branch

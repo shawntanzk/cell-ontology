@@ -14,7 +14,12 @@ jobs:
       - name: git_check
         run: |
             git branch incoming
-            git branch --contains master | grep incoming 
+            git branch --contains master | grep incoming | wc -l 
+      - name: Fail if not up to date
+        if: 
+        run: |
+        echo "your branch is not up to date, please update from master."
+        exit 1
   edit_file:
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest

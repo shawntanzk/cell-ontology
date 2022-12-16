@@ -19,8 +19,8 @@ jobs:
       - name: Fail if not up to date
         if: steps.git_check.outputs == '0'
         run: |
-        echo "your branch is not up to date, please update from master."
-        exit 1
+          echo "your branch is not up to date, please update from master."
+          exit 1
   edit_file:
     needs: check_branch
     if: ${{ github.event.issue.pull_request }}

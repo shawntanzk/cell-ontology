@@ -9,8 +9,6 @@ on:
 jobs:
   check_branch:
     runs-on: ubuntu-latest
-    outputs:
-      up_to_date: steps.git_check.outputs
     steps: 
       - uses: khan/pull-request-comment-trigger@v1.1.0
         id: check
@@ -25,7 +23,10 @@ jobs:
       - id: git_check
         run: |
             git branch incoming 
-            git branch --contains master | grep incoming | wc -l 
+            output=$(git branch --contains master | grep incoming | wc -l)
+            echo "::set-output name=output::$output"
+        outputs:
+            up_to_date: '${{ steps.git_check.outputs.output }}'
   edit_file:
     needs: 
       - check_branch
